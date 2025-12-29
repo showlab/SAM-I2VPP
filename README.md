@@ -1,8 +1,8 @@
 <p align="center">
   <h1 align="center">
-    SAM-I2V++
+    SAM-I2V++:
     <br>
-    <span style="font-size: 0.65em;">
+    <span style="font-size: 0.6em;">
       Efficiently Upgrading SAM for Promptable Video Segmentation
     </span>
   </h1>
