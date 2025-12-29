@@ -63,12 +63,12 @@ It achieves over **93%** of **SAM 2.1**’s performance while requiring only **0
 
 ### 2. Installation
 
-Our implementation uses `python==3.11`, `torch==2.5.0` and `torchvision==0.20.0`. Please follow the instructions [here](https://pytorch.org/get-started/locally/) to install both PyTorch and TorchVision dependencies. You can install SAM-I2V on a GPU machine using:
+Our implementation uses `python==3.11`, `torch==2.5.0` and `torchvision==0.20.0`. Please follow the instructions [here](https://pytorch.org/get-started/locally/) to install both PyTorch and TorchVision dependencies. You can install SAM-I2VPP on a GPU machine using:
 
 ```bash
-git clone https://github.com/showlab/SAM-I2V.git && cd SAM-I2V
-conda create -n sam-i2v python=3.11
-conda activate sam-i2v
+git clone https://github.com/showlab/SAM-I2VPP.git && cd SAM-I2VPP
+conda create -n sam-i2vpp python=3.11
+conda activate sam-i2vpp
 pip install torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0 --index-url https://download.pytorch.org/whl/cu121
 pip install -e .
 ```
