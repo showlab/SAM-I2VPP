@@ -52,13 +52,13 @@ a training-efficient method that upgrades the image-based SAM for promptable vid
 It achieves over **93%** of **SAM 2.1**’s performance while requiring only **0.2%** of its training cost.
 
 <p align="center">
-  <img src="assets/teaser.png?raw=true" width="300"/>
+  <img src="assets/teaser.png?raw=true" width="400"/>
 </p>
 
 **SAM-I2V++** takes an input video and extracts frame features via an image encoder enhanced by a temporal feature integrator to capture dynamic context. These features are processed by a memory selective associator and memory prompt generator to manage historical information and generate target prompts. A prompt encoder incorporates optional user inputs (e.g., masks, points, boxes). Finally, the mask decoder produces segmentation masks for each frame, enabling user-guided and memory-conditioned promptable video segmentation.
 
 <p align="center">
-  <img src="assets/pipeline.png?raw=true" width="600"/>
+  <img src="assets/pipeline.png?raw=true" width="750"/>
 </p>
 
 ### 2. Installation
