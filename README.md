@@ -77,18 +77,18 @@ pip install -e .
 
 #### 3.1 Download Checkpoint
 
-First, we need to download the SAM-I2V checkpoint. It can be downloaded from:
+First, we need to download the SAM-I2VPP checkpoint. It can be downloaded from:
 
-- [sam-i2v_8gpu.pt] 
-[ [Google Drive](https://drive.google.com/drive/folders/1sRvmBf_QwCwyxppuB_5-9IMcAHcUK_K7?usp=sharing) ]
-[ [OneDrive](https://1drv.ms/f/c/f6d9d790b8550d3f/Egr8_dMl2_RCgAtwiPvPEuoB_bsNfhNRwOmsMv32rjm0aA?e=JrkP6f) ]
-[ [BaiduDisk](https://pan.baidu.com/s/1qJk0_QrFLoU0pL4hAZup7Q?pwd=itov) ]
-- [sam-i2v_32gpu.pt]
-[ [Google Drive](https://drive.google.com/drive/folders/1sRvmBf_QwCwyxppuB_5-9IMcAHcUK_K7?usp=sharing) ]
-[ [OneDrive](https://1drv.ms/f/c/f6d9d790b8550d3f/Egr8_dMl2_RCgAtwiPvPEuoB_bsNfhNRwOmsMv32rjm0aA?e=JrkP6f) ]
-[ [BaiduDisk](https://pan.baidu.com/s/1qJk0_QrFLoU0pL4hAZup7Q?pwd=itov) ]
+- [sam-i2vpp_8gpu.pt] 
+[ [Google Drive](xxx) ]
+[ [OneDrive](xxx) ]
+[ [BaiduDisk](xxx) ]
+- [sam-i2vpp_32gpu.pt]
+[ [Google Drive](xxx) ]
+[ [OneDrive](xxx) ]
+[ [BaiduDisk](xxx) ]
 
-**Both models were trained in one day using 24GB GPUs.** The first model (sam-i2v_8gpu.pt) was trained with 8 GPUs, while the second model (sam-i2v_32gpu.pt) was trained with 32 GPUs and offers better performance.
+**Both models were trained in 26 hours using 24GB GPUs.** The first model (sam-i2vpp_8gpu.pt) was trained with 8 GPUs, while the second model (sam-i2vpp_32gpu.pt) was trained with 32 GPUs and offers better performance.
 
 #### 3.2 Demo Use
 
