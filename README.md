@@ -31,6 +31,20 @@
   </p>
 </div>
 
+1. [x] 1 overview
+2. [x] 2 installation
+3. [x] 3.1 download checkpoint
+4. [x] 3.2 demo use
+5. [ ] 3.3 testing
+6. [ ] 3.4 evaluation
+7. [ ] 3.5 training
+8. [x] 3.6 web annotation tool
+9. [x] 4 acknowledges
+10. [x] 5 citation
+11. [x] 6 license
+12. [x] 7 contact
+
+
 - [Table of Contents](#0-SAM-I2VPP)
   * [1. Overview](#1-overview)
   * [2. Installation](#2-installation)
@@ -40,6 +54,7 @@
     + [3.3 Testing](#33-testing)
     + [3.4 Evaluation](#34-evaluation)
     + [3.5 Training](#35-training)
+    + [3.6 Web Annotation Tool](#36-web-annotation-tool)
   * [4. Acknowledgements](#4-acknowledgements)
   * [5. Citation](#5-citation)
   * [6. License](#6-license)
@@ -80,27 +95,27 @@ pip install -e .
 First, we need to download the SAM-I2VPP checkpoint. It can be downloaded from:
 
 - [sam-i2vpp_8gpu.pt] 
-[ [Google Drive](xxx) ]
-[ [OneDrive](xxx) ]
-[ [BaiduDisk](xxx) ]
+[ [Google Drive](https://drive.google.com/drive/folders/1oN16mGGndbX7a7Gj5wWWyFDN9QHxMMoU?usp=sharing) ]
+[ [OneDrive](https://1drv.ms/f/c/f6d9d790b8550d3f/IgC1qxQ-jAg0RJ9dopj3TnX3ARPwJol7D68-Jo4TPuPYwSo?e=Ge4pEA) ]
+[ [BaiduDisk](https://pan.baidu.com/s/15-ipIqjfrz0Qm5iOEh4R_g?pwd=pami) ]
 - [sam-i2vpp_32gpu.pt]
-[ [Google Drive](xxx) ]
-[ [OneDrive](xxx) ]
-[ [BaiduDisk](xxx) ]
+[ [Google Drive](https://drive.google.com/drive/folders/1oN16mGGndbX7a7Gj5wWWyFDN9QHxMMoU?usp=sharing) ]
+[ [OneDrive](https://1drv.ms/f/c/f6d9d790b8550d3f/IgC1qxQ-jAg0RJ9dopj3TnX3ARPwJol7D68-Jo4TPuPYwSo?e=Ge4pEA) ]
+[ [BaiduDisk](https://pan.baidu.com/s/15-ipIqjfrz0Qm5iOEh4R_g?pwd=pami) ]
 
 **Both models were trained in 26 hours using 24GB GPUs.** The first model (sam-i2vpp_8gpu.pt) was trained with 8 GPUs, while the second model (sam-i2vpp_32gpu.pt) was trained with 32 GPUs and offers better performance.
 
 #### 3.2 Demo Use
 
-SAM-I2V can be used in a few lines as follows for promptable video segmentation. Below provides a video predictor with APIs for example to add prompts and propagate masklets throughout a video. Same as SAM2, SAM-I2V supports video inference on multiple objects and uses an inference state to keep track of the interactions in each video.
+SAM-I2V++ can be used in a few lines as follows for promptable video segmentation. Below provides a video predictor with APIs for example to add prompts and propagate masklets throughout a video. Same as SAM2, SAM-I2V++ supports video inference on multiple objects and uses an inference state to keep track of the interactions in each video.
 
 ```python
 import torch
-from i2vpp.build_i2v import build_i2v_video_predictor
+from i2vpp.build_i2vpp import build_i2vpp_video_predictor
 
-checkpoint = "./checkpoints/sam-i2v_32gpu.pt"
-model_cfg = "./i2v/configs/i2v-infer.yaml"
-predictor = build_i2v_video_predictor(model_cfg, checkpoint)
+checkpoint = "./checkpoints/sam-i2vpp_32gpu.pt"
+model_cfg = "./i2vpp/configs/i2vpp-infer.yaml"
+predictor = build_i2vpp_video_predictor(model_cfg, checkpoint)
 
 with torch.inference_mode(), torch.autocast("cuda", dtype=torch.bfloat16):
   state = predictor.init_state( < your_video >)
@@ -182,8 +197,7 @@ If you use SAM-I2V++ in your research, please use the following BibTeX entry.
 ```
 
 ### 6. License
-
-Please see `LICENSE`
+Please see `LICENSE`.
 
 ### 7. Contact
 E-Mail: Haiyang Mei (haiyang.mei@outlook.com)
