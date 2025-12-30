@@ -138,7 +138,7 @@ We provide instructions for testing on the SAV-Test dataset.
 ```
 python tools/save_gt_mask_multiprocess.py
 ```
-Or you can directly download the preprocessed 'mask_info' [here](https://drive.google.com/drive/folders/1sRvmBf_QwCwyxppuB_5-9IMcAHcUK_K7?usp=sharing).
+Or you can directly download the preprocessed 'mask_info' [here](https://drive.google.com/drive/folders/1oN16mGGndbX7a7Gj5wWWyFDN9QHxMMoU?usp=sharing).
 
 (c) Run the inference script
 ```
