@@ -96,21 +96,21 @@ SAM-I2V can be used in a few lines as follows for promptable video segmentation.
 
 ```python
 import torch
-from i2v.build_i2v import build_i2v_video_predictor
+from i2vpp.build_i2v import build_i2v_video_predictor
 
 checkpoint = "./checkpoints/sam-i2v_32gpu.pt"
 model_cfg = "./i2v/configs/i2v-infer.yaml"
 predictor = build_i2v_video_predictor(model_cfg, checkpoint)
 
 with torch.inference_mode(), torch.autocast("cuda", dtype=torch.bfloat16):
-    state = predictor.init_state(<your_video>)
+  state = predictor.init_state( < your_video >)
 
-    # add new prompts and instantly get the output on the same frame
-    frame_idx, object_ids, masks = predictor.add_new_points_or_box(state, <your_prompts>):
+  # add new prompts and instantly get the output on the same frame
+  frame_idx, object_ids, masks = predictor.add_new_points_or_box(state, < your_prompts >):
 
-    # propagate the prompts to get masklets throughout the video
-    for frame_idx, object_ids, masks in predictor.propagate_in_video(state):
-        ...
+  # propagate the prompts to get masklets throughout the video
+  for frame_idx, object_ids, masks in predictor.propagate_in_video(state):
+    ...
 ```
 
 #### 3.3 Testing
@@ -158,22 +158,26 @@ sh train.sh
 sh multi_node_train_4_nodes.sh
 ```
 
+#### 3.6 Web Annotation Tool
+```
+ssh -L 5000:127.0.0.1:5000 username@serverip
+python tools/web_annotation_tool.py
+```
+
 ### 4. Acknowledgements
 
 Our implementation builds upon [SAM 2](https://github.com/facebookresearch/sam2) and reuses essential modules from its official codebase.
 
 ### 5. Citation
 
-If you use SAM-I2V in your research, please use the following BibTeX entry.
+If you use SAM-I2V++ in your research, please use the following BibTeX entry.
 
 ```bibtex
-@InProceedings{Mei_2025_CVPR,
+@article{Mei_2026_TPAMI,
     author    = {Mei, Haiyang and Zhang, Pengyu and Shou, Mike Zheng},
-    title     = {SAM-I2V: Upgrading SAM to Support Promptable Video Segmentation with Less than 0.2% Training Cost},
-    booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR)},
-    month     = {June},
-    year      = {2025},
-    pages     = {3417-3426}
+    title     = {SAM-I2V++: Efficiently Upgrading SAM for Promptable Video Segmentation},
+    journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)},
+    year      = {2026},
 }
 ```
 
