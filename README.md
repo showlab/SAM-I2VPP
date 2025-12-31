@@ -94,11 +94,11 @@ pip install -e .
 
 First, we need to download the SAM-I2VPP checkpoint. It can be downloaded from:
 
-- [sam-i2vpp_8gpu.pt] 
+- sam-i2vpp_8gpu.pt 
 [ [Google Drive](https://drive.google.com/drive/folders/1oN16mGGndbX7a7Gj5wWWyFDN9QHxMMoU?usp=sharing) ]
 [ [OneDrive](https://1drv.ms/f/c/f6d9d790b8550d3f/IgC1qxQ-jAg0RJ9dopj3TnX3ARPwJol7D68-Jo4TPuPYwSo?e=Ge4pEA) ]
 [ [BaiduDisk](https://pan.baidu.com/s/15-ipIqjfrz0Qm5iOEh4R_g?pwd=pami) ]
-- [sam-i2vpp_32gpu.pt]
+- sam-i2vpp_32gpu.pt
 [ [Google Drive](https://drive.google.com/drive/folders/1oN16mGGndbX7a7Gj5wWWyFDN9QHxMMoU?usp=sharing) ]
 [ [OneDrive](https://1drv.ms/f/c/f6d9d790b8550d3f/IgC1qxQ-jAg0RJ9dopj3TnX3ARPwJol7D68-Jo4TPuPYwSo?e=Ge4pEA) ]
 [ [BaiduDisk](https://pan.baidu.com/s/15-ipIqjfrz0Qm5iOEh4R_g?pwd=pami) ]
