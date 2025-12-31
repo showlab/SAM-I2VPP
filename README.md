@@ -36,7 +36,7 @@
 3. [x] 3.1 download checkpoint
 4. [x] 3.2 demo use
 5. [ ] 3.3 testing
-6. [ ] 3.4 evaluation
+6. [x] 3.4 evaluation
 7. [ ] 3.5 training
 8. [x] 3.6 web annotation tool
 9. [x] 4 acknowledges
