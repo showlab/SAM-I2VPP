@@ -7,9 +7,9 @@ input="gm"
 
 # setup path
 method="i2vpp"
-ckpt="sam-i2vpp_8gpu"
+ckpt="sam-i2vpp_32gpu"
 yaml="i2vpp-infer.yaml"
-save_dir_name="sam-i2vpp_8gpu"
+save_dir_name="sam-i2vpp_32gpu"
 
 # run inference
 python inference_Semi_SAV_mgpu.py \
