@@ -31,20 +31,6 @@
   </p>
 </div>
 
-1. [x] 1 overview
-2. [x] 2 installation
-3. [x] 3.1 download checkpoint
-4. [x] 3.2 demo use
-5. [x] 3.3 testing
-6. [x] 3.4 evaluation
-7. [ ] 3.5 training
-8. [x] 3.6 web annotation tool
-9. [x] 4 acknowledges
-10. [x] 5 citation
-11. [x] 6 license
-12. [x] 7 contact
-
-
 - [Table of Contents](#0-SAM-I2VPP)
   * [1. Overview](#1-overview)
   * [2. Installation](#2-installation)
