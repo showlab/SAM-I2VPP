@@ -174,6 +174,15 @@ Our implementation builds upon [SAM 2](https://github.com/facebookresearch/sam2)
 If you use SAM-I2V++ in your research, please use the following BibTeX entry.
 
 ```bibtex
+@InProceedings{Mei_2025_CVPR,
+    author    = {Mei, Haiyang and Zhang, Pengyu and Shou, Mike Zheng},
+    title     = {SAM-I2V: Upgrading SAM to Support Promptable Video Segmentation with Less than 0.2% Training Cost},
+    booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {3417-3426}
+}
+
 @article{Mei_2026_TPAMI,
     author    = {Mei, Haiyang and Zhang, Pengyu and Shou, Mike Zheng},
     title     = {SAM-I2V++: Efficiently Upgrading SAM for Promptable Video Segmentation},
