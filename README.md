@@ -143,7 +143,7 @@ sh semi_eval.sh
 
 (a) Please refer to the [sav_dataset/README.md](sav_dataset/README.md) for detailed instructions on how to download and prepare the SAV-Train dataset. Totally 50,583 training videos ([train/txt/sav_train_list.txt](train/txt/sav_train_list.txt)).
 
-(b) We follow SAM 2 to train the model on mixed video and image data. Download the [SA-1B dataset](https://ai.meta.com/datasets/segment-anything/) and sample a subset of images, as the full dataset is too large to use in its entirety. We randomly sample 10k images ([train/txt/sa1b_10k_train_list.txt](train/txt/sa1b_10k_train_list.txt)) to train SAM-I2V.
+(b) We follow SAM 2 to train the model on mixed video and image data. Download the [SA-1B dataset](https://ai.meta.com/datasets/segment-anything/) and sample a subset of images, as the full dataset is too large to use in its entirety. We randomly sample 10k images ([train/txt/sa1b_10k_train_list.txt](train/txt/sa1b_10k_train_list.txt)) to train SAM-I2V++.
 
 (c) Download the SAM 1 model (i.e., [TinySAM](https://huggingface.co/xinghaochen/tinysam/tree/main)) to be upgraded and put it to `checkpoints/tinysam.pth`.
 
